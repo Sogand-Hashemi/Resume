@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body id="top">
@@ -28,24 +27,11 @@
         <div id="particles-js">
             <span class="parent-of-btn-menus" data-aos="fade-down" data-aos-duration="1000">
                 <span class="btn-1 btn-menus">Home</span>
-            <span class="btn-2 btn-menus btn-menus-except-home">About Me</span>
-            <span class="btn-3 btn-menus btn-menus-except-home">My Skills</span>
-            <span class="btn-4 btn-menus btn-menus-except-home">Work Samples</span>
-            <span class="btn-5 btn-menus btn-menus-except-home">Contact Me</span>
+            <a href="#partOne" class="btn-2 btn-menus btnTwo btn-menus-except-home"><span >About Me</span></a>
+            <a href="#partTwo" class="btn-3 btn-menus btn-menus-except-home"><span >My Skills</span></a>
+            <a href="#partOne" class="btn-4 btn-menus btn-menus-except-home"> <span>Work Samples</span></a>
+            <a href="#partOne" class="btn-5 btn-menus btn-menus-except-home"><span >Contact Me</span></a>
             </span>
-            <!-- <span class="btn-menus-responsive"></span> -->
-            <!-- <div class="btn-menus-responsive" id="myTopnav">
-                <a href="#home" class="active">Home</a>
-                <a href="#news">About Me</a>
-                <a href="#contact">My Skills</a>
-                <a href="#about">Contact Me</a>
-                <a href="javascript:void(0);" class="icon" onclick="reponsiveBtn()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div> -->
-
-
-
 
             <button class="dropdown-btn" id="dropDownBtn" type="button"></button>
 
@@ -85,42 +71,28 @@
         <div class="control-animation" id="trigger-right"></div>
     </header>
     <main>
-        <div class="part-1">
+        <div class="part-1" id="partOne">
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="about-me pull-right" data-aos="zoom-in-right" data-aos-mirror="true"></div>
+                <div class="education pull-right" data-aos="zoom-in-right" data-aos-mirror="true">
+                    <section class="title-education">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <div>My Education</div>
+                    </section>
+                </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="education pull-left" data-aos="zoom-in-left" data-aos-mirror="true"></div>
+                <div class="about-me pull-left" data-aos="zoom-in-left" data-aos-mirror="true">
+                    <section class="title-about-me">
+                        <i class="fa fa-id-badge" aria-hidden="true"></i>
+                        <div>About Me</div>
+                </div>
             </div>
         </div>
-        <div class="part-2"></div>
+        <div class="part-2" id="partTwo"></div>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-        // AOS.init({
-        //     duration: 1000,
-        // });
-
-        // var count_particles, stats, update;
-        // stats = new Stats;
-        // stats.setMode(0);
-        // stats.domElement.style.position = 'absolute';
-        // stats.domElement.style.left = '0px';
-        // stats.domElement.style.top = '0px';
-        // document.body.appendChild(stats.domElement);
-        // count_particles = document.querySelector('.js-count-particles');
-        // update = function() {
-        //     stats.begin();
-        //     stats.end();
-        //     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        //         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        //     }
-        //     requestAnimationFrame(update);
-        // };
-        // requestAnimationFrame(update);
-    </script>
 </body>
 
 </html>

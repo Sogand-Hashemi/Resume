@@ -7,6 +7,14 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
 .go-to-top {
     position: fixed;
     width: 30px;
@@ -69,6 +77,8 @@
     background-repeat: no-repeat;
     background-size: 540px 820px;
     padding-right: 30px;
+    /* filter: drop-shadow(2px 2px 10px rgba(42, 42, 42, 0.692));
+    -webkit-filter: drop-shadow(2px 2px 10px rgba(42, 42, 42, 0.692)); */
 }
 
 .logo {
@@ -602,11 +612,31 @@ padding: 10px 4px 0 10px;
 /* ------------------------------------------- <main> ------------------------------------- */
 
 .part-1 {
-    background-color: #EFF5FA;
+    /* background-color: #EFF5FA; */
+    background: #eee url('http://static.simpledesktops.com/static/images/sd-bg.png') repeat;
     height: 670px;
     width: 100%;
     padding: 15px 10%;
+    position: relative;
+    z-index: -2;
+    box-shadow: inset 1px -1px 10px 2px black;
     /* border-bottom: 1px solid rgb(161, 161, 161); */
+}
+
+
+/* .footer-bg {
+    margin-top: -15px;
+} */
+
+.part-1::after {
+    content: '';
+    position: absolute;
+    background-color: #eff5fa70;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .about-me,
@@ -618,6 +648,24 @@ padding: 10px 4px 0 10px;
     border-top: 8px solid #F7434C;
     box-shadow: 0 2px 8px 2px gray;
     margin-top: 92px;
+    z-index: 1;
+}
+
+.title-education,
+.title-about-me {
+    margin: 50px 50px;
+    padding: 10px 25px;
+    height: 85px;
+    border-left: 3px solid #37CACD;
+    font-weight: 500 !important;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fa-graduation-cap,
+.fa-id-badge {
+    font-size: 30px;
+    color: #F7434C;
 }
 
 .part-2 {
@@ -861,10 +909,24 @@ padding: 10px 4px 0 10px;
         background-color: white;
         width: 100%;
         height: 400px;
-        /* border: 1px solid red; */
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 92px;
+    }
+    .title-education,
+    .title-about-me {
+        margin: 30px 30px;
+        padding: 10px 0 0 25px;
+        height: 75px;
+        border-left: 3px solid #37CACD;
+        font-weight: 500 !important;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .fa-graduation-cap,
+    .fa-id-badge {
+        font-size: 25px;
+        color: #F7434C;
     }
 }
 
@@ -1149,7 +1211,10 @@ padding: 10px 4px 0 10px;
         /* border: 1px solid red; */
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
-        margin-top: 92px;
+        margin-top: 25px;
+    }
+    .part-1 {
+        height: 1020px;
     }
 }
 
@@ -1234,23 +1299,25 @@ border: 1px solid red;
         /* border: 1px solid red; */
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
-        margin-top: 92px;
+        margin-top: 30px;
     }
     .part-1 {
-        height: 890px;
+        height: 720px;
         /* width: 250px; */
     }
+    .title-education,
+    .title-about-me {
+        margin: 30px 30px;
+        padding: 10px 0 0 25px;
+        height: 65px;
+        border-left: 3px solid #37CACD;
+        font-weight: 500 !important;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .fa-graduation-cap,
+    .fa-id-badge {
+        font-size: 22px;
+        color: #F7434C;
+    }
 }
-
-
-/* .lines-svg {
-fill: #F7434C;
-color: #F7434C;
-width: 25px;
-height: 25px;
-padding: 0 2px 0 2px;
-margin: -4px 0 0 0;
-z-index: 0;
-
-
-} */

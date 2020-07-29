@@ -5,8 +5,29 @@ AOS.init({
     duration: 1000,
 });
 
-// particle.js (background animation of the header) :
+//drop down button:
+document.getElementById('dropDownBtn').onclick = function() {
 
+    let divResMenu = document.getElementById('divResMenu');
+    divResMenu.classList.toggle('div-res-menu');
+    // divResMenu.style.display = "block";
+}
+
+// text animation
+let i = 0;
+let txt = 'Junior Front-End Developer';
+let speed = 80;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("firstText").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+typeWriter();
+
+// particle.js (background animation of the header) :
 particlesJS('particles-js',
 
     {
@@ -147,25 +168,3 @@ update = function() {
     requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
-
-// text animation
-let i = 0;
-let txt = 'Junior Front-End Developer';
-let speed = 80;
-
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("firstText").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-typeWriter();
-
-//drop down button:
-document.getElementById('dropDownBtn').onclick = function() {
-
-    let divResMenu = document.getElementById('divResMenu');
-    divResMenu.classList.toggle('div-res-menu');
-    // divResMenu.style.display = "block";
-}
