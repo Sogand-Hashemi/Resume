@@ -77,8 +77,6 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 540px 820px;
     padding-right: 30px;
-    /* filter: drop-shadow(2px 2px 10px rgba(42, 42, 42, 0.692));
-    -webkit-filter: drop-shadow(2px 2px 10px rgba(42, 42, 42, 0.692)); */
 }
 
 .logo {
@@ -95,18 +93,14 @@ a:hover {
 
 .parent-of-btn-menus {
     display: flex;
-    /* margin-left: 100%; */
     right: 100px;
     top: 15px;
-    /* border: 1px solid blue; */
     justify-content: right;
     position: absolute;
 }
 
 .btn-menus {
     border: .5px solid rgba(128, 128, 128, 0.13);
-    /*width: 110px;
-*/
     height: 40px;
     border-radius: 20px;
     margin: 10px 5px;
@@ -114,8 +108,6 @@ a:hover {
     text-align: center;
     padding: 8px 25px;
     box-shadow: 0 3px 5px rgb(104, 103, 103);
-    /*position: absolute;
-*/
     cursor: pointer;
     transition: ease .5s;
     font-size: 18px;
@@ -423,7 +415,6 @@ a:hover {
     color: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
-    /* text-shadow: 0 1px 2px #4b4b4bec; */
     top: 530px;
     left: 17%;
     position: absolute;
@@ -436,14 +427,8 @@ a:hover {
     right: -15px;
     position: relative;
     z-index: 1;
-    /*background-color: red;
-*/
-    /*padding: 0;
-*/
     background-color: rgba(0, 0, 0, 0.671);
     border-radius: 5px;
-    /*padding: 10px 7px 0 10px;
-    */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -453,11 +438,6 @@ a:hover {
 #divResMenu:first-child {
     padding: 10px 4px 0 10px;
 }
-
-
-/* #divResMenu:first-child:hover {
-padding: 10px 4px 0 10px;
-} */
 
 .res-a-in-btn {
     background-color: #fff;
@@ -486,7 +466,6 @@ padding: 10px 4px 0 10px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     display: inline-block;
-    /* width: 100% !important; */
     text-decoration: none !important;
     filter: drop-shadow(2px 2px 2px black);
     -webkit-filter: drop-shadow(2px 2px 2px black);
@@ -498,20 +477,10 @@ padding: 10px 4px 0 10px;
 }
 
 .div-res-menu {
-    /*width: 100%;
-*/
-    /*height: 20px;
-*/
     background-color: transparent;
     border: none;
     box-shadow: none;
-    /*margin-top: 100px;
-*/
-    /*margin-right: -15px;
-*/
     display: none;
-    /*padding: 20px;
-*/
 }
 
 .res-li-in-btn {
@@ -612,7 +581,6 @@ padding: 10px 4px 0 10px;
 /* ------------------------------------------- <main> ------------------------------------- */
 
 .part-1 {
-    /* background-color: #EFF5FA; */
     background: #eee url('http://static.simpledesktops.com/static/images/sd-bg.png') repeat;
     height: 670px;
     width: 100%;
@@ -620,13 +588,7 @@ padding: 10px 4px 0 10px;
     position: relative;
     z-index: -2;
     box-shadow: inset 1px -1px 10px 2px black;
-    /* border-bottom: 1px solid rgb(161, 161, 161); */
 }
-
-
-/* .footer-bg {
-    margin-top: -15px;
-} */
 
 .part-1::after {
     content: '';
@@ -644,7 +606,6 @@ padding: 10px 4px 0 10px;
     background-color: white;
     width: 75%;
     height: 455px;
-    /* border: 1px solid red; */
     border-top: 8px solid #F7434C;
     box-shadow: 0 2px 8px 2px gray;
     margin-top: 92px;
@@ -669,9 +630,32 @@ padding: 10px 4px 0 10px;
 }
 
 .part-2 {
-    background-color: #37CBCE;
+    background: #eee url('http://static.simpledesktops.com/uploads/desktops/2014/08/06/w_v_s.png') no-repeat;
+    background-size: cover;
+    background-position: bottom;
     height: 980px;
     width: 100%;
+    padding: 15px 10%;
+    position: relative;
+    z-index: -2;
+    box-shadow: inset 1px -1px 10px 2px black;
+}
+
+
+/* http://static.simpledesktops.com/uploads/desktops/2015/07/11/Yosemite-Color-Block.png */
+
+
+/* http://static.simpledesktops.com/uploads/desktops/2014/08/06/w_v_s.png */
+
+.part-2::after {
+    content: '';
+    position: absolute;
+    background-color: #37cccecc;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 
@@ -1010,10 +994,6 @@ padding: 10px 4px 0 10px;
         position: absolute;
         top: 15px;
         right: 20px;
-        /*right: -100px;
-    */
-        /*left: 100%;
-    */
         border: 2px solid rgba(161, 161, 161, 0.863);
         background-color: rgba(255, 255, 255, 0.329);
         padding: 3px 3px 0px 3px;
@@ -1208,7 +1188,6 @@ padding: 10px 4px 0 10px;
         background-color: white;
         width: 100%;
         height: 455px;
-        /* border: 1px solid red; */
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 25px;
@@ -1216,21 +1195,12 @@ padding: 10px 4px 0 10px;
     .part-1 {
         height: 1020px;
     }
+    .go-to-top {
+        right: 10px;
+    }
 }
 
 @media(max-width:450px) {
-    /* #particles-js {
-display: flex;
-justify-content: center;
-width: 100%;
-} */
-    /* .texts-in-header {
-display: flex;
-justify-content: center;
-width: 100%;
-height: 20px;
-border: 1px solid red;
-} */
     #particles-js {
         background-position: center bottom;
         background-size: 230px 360px;
@@ -1296,14 +1266,12 @@ border: 1px solid red;
         background-color: white;
         width: 100%;
         height: 300px;
-        /* border: 1px solid red; */
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 30px;
     }
     .part-1 {
         height: 720px;
-        /* width: 250px; */
     }
     .title-education,
     .title-about-me {
@@ -1319,5 +1287,12 @@ border: 1px solid red;
     .fa-id-badge {
         font-size: 22px;
         color: #F7434C;
+    }
+    .go-to-top {
+        width: 25px;
+        height: 25px;
+        top: 93%;
+        right: 10px;
+        background-size: 25px 25px;
     }
 }

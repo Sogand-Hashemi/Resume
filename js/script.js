@@ -10,7 +10,15 @@ document.getElementById('dropDownBtn').onclick = function() {
 
     let divResMenu = document.getElementById('divResMenu');
     divResMenu.classList.toggle('div-res-menu');
-    // divResMenu.style.display = "block";
+}
+let listItems = document.getElementsByClassName('res-li-in-btn');
+let counter;
+for (counter = 0; counter < listItems.length; counter++) {
+    listItems[counter].onclick = function() {
+
+        let divResMenu = document.getElementById('divResMenu');
+        divResMenu.classList.toggle('div-res-menu');
+    }
 }
 
 // text animation
