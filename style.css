@@ -30,8 +30,8 @@ a:hover {
     -moz-transition: ease-in-out .5s;
     -ms-transition: ease-in-out .5s;
     -o-transition: ease-in-out .5s;
-    filter: drop-shadow(2px 2px 2px rgb(102, 102, 102));
-    -webkit-filter: drop-shadow(2px 2px 2px rgb(59, 59, 59));
+    filter: drop-shadow(2px 2px 2px rgb(63, 63, 63));
+    -webkit-filter: drop-shadow(2px 2px 2px rgb(102, 102, 102));
     cursor: pointer;
     z-index: 5;
 }
@@ -785,7 +785,7 @@ a:hover {
 
 .part-3 {
     height: 900px;
-    background-color: #eee;
+    background-color: white;
     padding: 40px 18%;
 }
 
@@ -898,7 +898,149 @@ a:hover {
 /* ----------------------------------</part-3>---------------------------------------------- */
 
 
+/* -----------------------------------<part-4>---------------------------------------------- */
+
+.part-4 {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    height: 780px;
+    width: 100%;
+    padding: 5px 10%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F7F7F7;
+    font-weight: 400 !important;
+}
+
+.my-address,
+.my-email {
+    margin: 50px 0;
+}
+
+.contact-me {
+    margin-bottom: 15px;
+}
+
+.fa-map,
+.fa-envelope {
+    font-size: 22px;
+    padding-top: 15px;
+    color: white;
+    border: 1px solid transparent;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: #1B1E21;
+    /* margin-left: 20px; */
+}
+
+.contact-info-text {
+    color: #1B1E21;
+    /* position: absolute; */
+    /* left: 115px;
+    top: -15px; */
+    padding: 0;
+}
+
+.contact-info-text>p {
+    color: #7e7e7e;
+    font-size: 16px;
+    margin-top: -6px;
+}
+
+.send-me-a-message {
+    width: 60%;
+    margin: 40px auto;
+}
+
+label {
+    font-weight: 400 !important;
+    /* color: #F7434C; */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    margin-top: 15px;
+}
+
+
+/* ----------------------------------</part-4>---------------------------------------------- */
+
+
 /* ------------------------------------------------- </main> --------------------------------------------------- */
+
+
+/* ------------------------------------------------ <footer> --------------------------------------------------- */
+
+.footer {
+    background: #000 url('./images/footer.png') no-repeat;
+    height: 115px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.my-logo-in-footer {
+    background-image: url('./images/my-logo-PW.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+    left: 50px;
+    top: 10px;
+    -webkit-filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+}
+
+.networks {
+    margin: 18px auto;
+    text-align: center;
+}
+
+.fa-github,
+.fa-invision,
+.fa-codepen,
+.fa-twitter {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #ddd;
+    filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+    transition: ease-in-out .5s;
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+    -ms-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+}
+
+.fa-github:hover,
+.fa-invision:hover,
+.fa-codepen:hover,
+.fa-twitter:hover {
+    font-size: 30px;
+    color: #F86A72;
+    filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+}
+
+.networks>a>i>div {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+/* ----------------------------------------------- </footer> --------------------------------------------------- */
 
 
 /* ------------------------------------------- responsive ------------------------------------- */
@@ -1018,7 +1160,6 @@ a:hover {
     }
     .part-3 {
         height: 910px;
-        background-color: #eee;
         padding: 50px 10%;
     }
     .part-3>div>h1 {
@@ -1058,7 +1199,7 @@ a:hover {
 @media(max-width:1160px) {
     #particles-js {
         background-position: 100% bottom;
-        background-size: 360px 550px;
+        background-size: 370px 550px;
         height: 820px;
     }
     .parent-of-btn-menus {
@@ -1232,6 +1373,26 @@ a:hover {
     .project-pic:after {
         height: 190px;
     }
+    .fa-map,
+    .fa-envelope {
+        font-size: 18px;
+        padding-top: 13px;
+        width: 45px;
+        height: 45px;
+        margin-left: 10px;
+    }
+    .contact-info-text {
+        left: 85px;
+        top: -15px;
+    }
+    .contact-info-text>p {
+        color: #7e7e7e;
+        font-size: 15px;
+        margin-top: -6px;
+    }
+    /* .middle-line-in-footer {
+        left: 29%;
+    } */
 }
 
 @media (max-width: 991px) {
@@ -1257,6 +1418,9 @@ a:hover {
     .project-pic:after {
         height: 170px;
     }
+    /* .middle-line-in-footer {
+        left: 30%;
+    } */
 }
 
 .btn-menus-responsive {
@@ -1320,7 +1484,7 @@ a:hover {
 @media(max-width:767px) {
     #particles-js {
         background-position: center bottom;
-        background-size: 250px 400px;
+        background-size: 260px 400px;
         height: 830px;
     }
     .parent-of-btn-menus {
@@ -1622,12 +1786,87 @@ a:hover {
     .part-3 {
         height: 1650px;
     }
+    /* -----------<part-4>--------- */
+    .part-4 {
+        height: 870px;
+    }
+    .send-me-a-message {
+        width: 75%;
+        margin: 15px auto;
+    }
+    .contact-me>h1 {
+        font-size: 25px;
+        border-bottom: 1px solid rgb(55, 202, 205);
+        padding: 5px;
+        /* margin: 15px 10% 25px 0; */
+        margin-bottom: 25px;
+    }
+    .my-address,
+    .my-email {
+        margin: 15px 0;
+        text-align: center!important;
+    }
+    .form-group {
+        margin-top: 25px;
+    }
+    .fa-map,
+    .fa-envelope {
+        font-size: 15px;
+        padding-top: 11px;
+        width: 40px;
+        height: 40px;
+        /* margin-left: 10px; */
+    }
+    .contact-info-text {
+        left: 0px;
+        position: relative;
+        text-align: center!important;
+        /* top: -20px; */
+    }
+    .contact-info-text>h3 {
+        font-size: 18px;
+    }
+    .contact-info-text>p {
+        color: #7e7e7e;
+        font-size: 14px;
+        margin-top: -6px;
+    }
+    /* -----------</part-4>--------- */
+    /* ------------<footer>--------- */
+    .my-logo-in-footer {
+        background-size: 80px 80px;
+        width: 80px;
+        height: 80px;
+        left: 0px;
+        top: 20px;
+    }
+    .networks {
+        margin: 20px auto;
+    }
+    .fa-github,
+    .fa-invision,
+    .fa-codepen,
+    .fa-twitter {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .fa-github:hover,
+    .fa-invision:hover,
+    .fa-codepen:hover,
+    .fa-twitter:hover {
+        font-size: 18px;
+    }
+    .networks>a>i>div {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    /* -----------</footer>--------- */
 }
 
 @media(max-width:450px) {
     #particles-js {
         background-position: center bottom;
-        background-size: 230px 360px;
+        background-size: 240px 360px;
         height: 710px;
     }
     .logo {
@@ -1811,4 +2050,39 @@ a:hover {
     .project-pic:after {
         height: 70px;
     }
+    .send-me-a-message {
+        width: 85%;
+        margin: 15px auto;
+    }
+    /* -----------</footer>--------- */
+    /* ------------<footer>--------- */
+    .my-logo-in-footer {
+        background-size: 60px 60px;
+        width: 60px;
+        height: 60px;
+        left: -2px;
+        top: 70px;
+    }
+    .networks {
+        margin: 20px auto;
+    }
+    .fa-github,
+    .fa-invision,
+    .fa-codepen,
+    .fa-twitter {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .fa-github:hover,
+    .fa-invision:hover,
+    .fa-codepen:hover,
+    .fa-twitter:hover {
+        font-size: 18px;
+    }
+    .networks>a>i>div {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    /* -----------</footer>--------- */
+    /* -----------</footer>--------- */
 }
