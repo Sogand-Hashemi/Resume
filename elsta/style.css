@@ -1,0 +1,579 @@
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            line-height: 1.7em;
+        }
+        
+        @font-face {
+            font-family: "AGhasem";
+            font-style: normal;
+            font-weight: bold;
+            src: url('./fonts/AGhasem/AGhasem.eot');
+            src: url('./fonts/AGhasem/AGhasem.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+            url('./fonts/AGhasem/AGhasem.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url('./fonts/AGhasem/AGhasem.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: "tanha";
+            font-style: normal;
+            font-weight: bold;
+            src: url('./fonts/Tanha/Tanha.eot');
+            src: url('./fonts/Tanha/Tanha.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+            url('./fonts/Tanha/Tanha.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+            url('./fonts/Tanha/Tanha.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url('./fonts/Tanha/Tanha.ttf') format('truetype');
+        }
+        
+        p {
+            font-family: "tanha";
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "AGhasem";
+        }
+        
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        header {
+            width: 100%;
+            min-width: 1200px;
+            height: 450px;
+            margin: 0px auto;
+            background: url('./images/BG-header-shadow.png') no-repeat;
+            background-position: 0px 0px;
+            background-size: cover;
+            position: relative;
+            /*az background-blend-mode be elate support nashodane ye seri az version haye browser ha estefade nakardam*/
+        }
+        
+        .container {
+            /* height: 2650px; */
+            min-width: 1200px;
+            width: 100%;
+            background-color: white;
+            margin: 0px auto;
+            padding: 0px 73.13px;
+        }
+        
+        .iphone {
+            position: absolute;
+            left: 160px;
+            top: 111.5px;
+        }
+        
+        .div-on-header {
+            width: 450px;
+            margin: 50px 200px;
+            color: white;
+            padding: 5px;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-top: 50px solid #58D093;
+            border-right: 50px solid #58D093;
+            border-bottom: 30px solid transparent;
+            border-left: 50px solid #58D093;
+            margin: 0px 80px;
+            filter: drop-shadow(4px 4px 4px black)
+        }
+        
+        .logo-box1 {
+            width: 48px;
+            height: 48px;
+            border-top: 48px solid white;
+            border-right: 48px solid white;
+            border-bottom: 28px solid transparent;
+            border-left: 48px solid white;
+            margin: -50px -48px;
+        }
+        
+        .logo-box2 {
+            width: 47px;
+            height: 47px;
+            border-top: 47px solid #58D093;
+            border-right: 47px solid #58D093;
+            border-bottom: 27px solid transparent;
+            border-left: 47px solid #58D093;
+            margin: -48px -47px;
+        }
+        
+        .h2-logo-elsta {
+            margin: -40px -33px;
+            font-family: tanha;
+            color: white;
+        }
+        
+        .btn-default {
+            padding: 2px 30px;
+            font-family: tanha;
+            font-size: 20px;
+            background-color: #58D093;
+            color: white;
+            border: 2px outset #58D093;
+            filter: drop-shadow(1px 1.5px 1px black)
+        }
+        
+        .main-text {
+            text-align: center;
+        }
+        /* --------------------<row-2>------------------- */
+        
+        .container-in-row2 {
+            width: 100%;
+            min-width: 900px;
+            max-width: 2000px;
+            background-color: transparent;
+            margin: 0px auto;
+        }
+        
+        .row-2 {
+            width: 100%;
+            min-width: 900px;
+            max-width: 2000px;
+            height: 370px;
+            background-color: rgb(250, 250, 250);
+            display: table;
+            padding: 100px;
+            margin: auto;
+        }
+        /* .div-get-app {
+            padding-right: 250px;
+            display: table-cell;
+        } */
+        
+        @media only screen and (max-width: 992px) {
+            .div-get-app {
+                padding-right: 150px;
+            }
+        }
+        
+        .video-div {
+            margin: auto;
+            /* border: 2px solid red; */
+            padding-top: 20px;
+            display: table-cell;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .video-div {
+                padding-top: 20px;
+                padding-right: 150px;
+            }
+        }
+        
+        iframe {
+            filter: drop-shadow(2px 2px 2px black);
+            margin: auto;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            iframe {
+                background-image: url('../images/Play.ico');
+                background-repeat: no-repeat;
+                background-size: 100px;
+                background-color: black;
+                background-position: 160px 70px;
+            }
+        }
+        /* -------------------</row-2>------------------- */
+        
+        .container-2 {
+            width: 100%;
+            min-width: 1100px;
+            max-width: 3000px;
+            padding: 40px 0px;
+        }
+        
+        .row-3 {
+            text-align: center;
+            margin: 0px auto;
+        }
+        /* -------------------<icons>--------------------- */
+        
+        .great-concept {
+            width: 78px;
+            height: 76px;
+            background-image: url('./images/icons.png');
+            background-position: -1px 0px;
+            padding: 30px;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .great-concept-div {
+                padding-right: 150px;
+            }
+            .easy-to-costomize-div {
+                padding-right: 150px;
+            }
+        }
+        
+        .great-concept:hover {
+            filter: drop-shadow(6px 6px 30px rgb(0, 129, 0));
+            cursor: pointer;
+            /* transition-delay: 0.2s; */
+            transition-duration: 0.5s;
+        }
+        
+        .user-friendly {
+            width: 78px;
+            height: 76px;
+            background-image: url('./images/icons.png');
+            background-position: -90px -.5px;
+            padding: 30px;
+        }
+        
+        .user-friendly:hover {
+            filter: drop-shadow(6px 6px 35px rgb(0, 129, 0));
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        .easy-to-costomize {
+            width: 78px;
+            height: 76px;
+            background-image: url('./images/icons.png');
+            background-position: -288.5px 1px;
+            padding: 30px;
+        }
+        
+        .easy-to-costomize:hover {
+            filter: drop-shadow(6px 6px 20px rgb(0, 129, 0));
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .easy-to-costomize-div {
+                padding-right: 150px;
+            }
+        }
+        
+        .secure-page {
+            width: 78px;
+            height: 76px;
+            background-image: url('./images/icons.png');
+            background-position: -192px -1px;
+            padding: 30px;
+        }
+        
+        .secure-page:hover {
+            filter: drop-shadow(6px 6px 25px rgb(0, 129, 0));
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        .h3-icons {
+            border-top: 1px solid #959595;
+            padding-top: 20px;
+        }
+        
+        .box1 {
+            margin: auto;
+        }
+        /*--------------------------- </icons> ---------------------*/
+        
+        footer {
+            font-family: tanha;
+        }
+        
+        .row-4 {
+            width: 800px;
+            height: 380px;
+            margin: auto;
+            padding-top: 40px;
+            box-shadow: 0 9px 10px -12px black, 0 -8px 10px -12px black;
+            /* box-shadow: 0 0 0 4px white, 0 6px 4px black; */
+            text-align: center;
+        }
+        
+        .john-smith {
+            width: 114px;
+            height: 120px;
+            margin: auto;
+        }
+        /*------<double quotations>------ */
+        
+        .left-quotation {
+            width: 40px;
+            height: 30px;
+            background-image: url('./images/double\ quotation.png');
+            margin: -6px 723px;
+        }
+        
+        .right-quotation {
+            width: 40px;
+            height: 30px;
+            background-image: url('./images/double\ quotation.png');
+            background-position: -60px 0px;
+            margin: -34px -36px;
+        }
+        /* ------</double quotations>----- */
+        
+        .row-5 {
+            text-align: center;
+        }
+        
+        .row-5-1 {
+            margin: 0px auto;
+        }
+        
+        .praicing-plans {
+            padding: 5px;
+        }
+        
+        .circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            margin: -45px auto;
+            background-color: rgb(66, 90, 90);
+            filter: drop-shadow(4px 3px 2px black);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: relative;
+        }
+        
+        .text-circle {
+            margin: 2px;
+            font-size: 46px;
+        }
+        
+        .small-1 {
+            font-size: 14px;
+        }
+        
+        .small-2 {
+            font-size: 10px;
+            margin: 14px 5px;
+            position: absolute;
+            top: 46px;
+            left: 32px;
+        }
+        
+        .top-bg {
+            width: 200px;
+            height: 120px;
+            border: .1px solid rgb(66, 90, 90);
+            margin: -40px auto;
+            background-image: url('./images/pricing\ plans.png');
+            position: relative;
+        }
+        
+        .p1 {
+            color: white;
+            font-size: 28px;
+            margin: 40px;
+        }
+        
+        .p2 {
+            font-family: tanha;
+            font-size: 12px;
+            margin: -40px 5px;
+            color: rgb(235, 235, 235);
+        }
+        
+        .table-div {
+            width: 200px;
+            height: 250px;
+            border: 1px solid #DDDDDD;
+            margin: 40px auto;
+            border-top: none;
+            color: #8a8a8a;
+            box-shadow: 6px 9px 10px -12px black;
+        }
+        
+        .btn-purchase {
+            margin: 8px;
+            background-color: rgb(66, 90, 90);
+            border: 2px outset rgb(66, 90, 90);
+        }
+        /* --------------------<hover>---------------------- */
+        
+        .praicing-plans:hover .top-bg:before {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            z-index: 0;
+            transition-duration: 0.5s;
+        }
+        
+        .praicing-plans:hover .top-bg:before {
+            display: block;
+        }
+        
+        .praicing-plans:hover .top-bg:before {
+            background-color: rgba(88, 208, 148, 0.603);
+            /* border: 1px solid rgba(88, 208, 148, 0.603); */
+            transition-duration: 0.5s;
+        }
+        
+        .praicing-plans:hover {
+            cursor: pointer;
+        }
+        
+        .praicing-plans:hover .circle {
+            background-color: #58D093;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        .praicing-plans:hover .top-bg {
+            background-color: rgba(88, 208, 148, 0.603);
+            /* border: 1px solid rgba(88, 208, 148, 0.603); */
+            cursor: pointer;
+            width: 200px;
+            height: 120px;
+            transition-duration: 0.5s;
+        }
+        
+        .praicing-plans:hover .btn-purchase {
+            background-color: #58D093;
+            border: 1px outset #58D093;
+            color: white;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        /* --------------------</hover>---------------------- */
+        /* ---------------------<forms>---------------------- */
+        
+        .row-6 {
+            margin: 0px auto;
+        }
+        
+        .form-control {
+            background-color: rgb(233, 224, 224);
+            margin: 10px 0px;
+        }
+        
+        .col-md-3 {
+            min-width: 255px;
+        }
+        
+        .col-md-2 {
+            min-width: 200px;
+        }
+        
+        .col-md-5 {
+            min-width: 200px;
+        }
+        
+        .col-md-6 {
+            min-width: 510px;
+        }
+        
+        .well {
+            border: 1px solid transparent;
+            box-shadow: none;
+            background-color: transparent;
+        }
+        /* --------------------</forms>---------------------- */
+        /* --------------------</footer>--------------------- */
+        
+        .footer {
+            width: 100%;
+            min-width: 1200px;
+            height: 90px;
+            background-image: url('./images/BGfooterLighten.png');
+            margin: 0px auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .name {
+            font-family: "tanha";
+            font-size: 40px;
+            color: white;
+            top: 1px;
+            right: 50px;
+            display: inline-block;
+            position: absolute;
+        }
+        
+        .small-3 {
+            font-size: 13px;
+            color: white;
+            top: 55px;
+            right: 50px;
+            position: absolute;
+        }
+        
+        .footer-icons {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+        
+        .facebook {
+            width: 40px;
+            height: 40px;
+            background-image: url('./images/footer\ icons.png');
+            background-position: 0px 0px;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .facebook:hover {
+            filter: drop-shadow(1px 1px 2px rgb(250, 250, 130));
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        .twitter {
+            width: 40px;
+            height: 40px;
+            background-image: url('./images/footer\ icons.png');
+            background-position: 97px 0px;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 50px;
+        }
+        
+        .twitter:hover {
+            filter: drop-shadow(1px 1px 2px rgb(250, 250, 130));
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        .googleplus {
+            width: 40px;
+            height: 40px;
+            background-image: url('./images/footer\ icons.png');
+            background-position: 195px 0px;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+        }
+        
+        .googleplus:hover {
+            filter: drop-shadow(1px 1px 2px rgb(250, 250, 130));
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        /* --------------------</footer>--------------------- */

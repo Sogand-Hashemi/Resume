@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/old-piano-keys-ann-powell.jpg);
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
+}
+
+body:after {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    position: absolute;
+}
+
+.title {
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    top: 60px;
+    color: #eee;
+    text-shadow: 2px 2px 5px black;
+}
+
+.keys {
+    position: relative;
+    top: 250px;
+    left: 5%;
+    width: 90%;
+    z-index: 2;
+}
+
+@keyframes color {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: -1000px 0px;
+    }
+}
+
+.border {
+    display: inline-block;
+    width: 112px;
+    height: 112px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 1.25% 10px 1.25%;
+    padding: 6px;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-image: linear-gradient(120deg, rgb(255, 255, 50), rgb(255, 126, 126), #41c8fd, #64ff8b, rgb(255, 255, 50));
+    transition: all 0.09s;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    -webkit-transition: all 0.09s;
+    -moz-transition: all 0.09s;
+    -ms-transition: all 0.09s;
+    -o-transition: all 0.09s;
+}
+
+.playing {
+    animation: color 1s infinite linear;
+    -webkit-animation: color 1s infinite linear;
+    box-shadow: 0 0 10px rgb(1, 141, 255);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.key {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
+    box-shadow: 0 0 8px rgb(78, 78, 78);
+}
+
+@media(max-width:768px) {
+    .border {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+@media(max-width:768px) {
+    .key {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+}
+
+kbd {
+    font-size: 28px;
+    width: 100%;
+    width: 20px;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width:768px) {
+    kbd {
+        font-size: 18px;
+    }
+}
+
+.key>span {
+    display: block;
+    color: darkred;
+    padding-top: 5px;
+}

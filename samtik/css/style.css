@@ -1,0 +1,24 @@
+header {
+    background-image: url('/images/Bg-images/bg-main4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top -70px;
+    background-size: cover;
+}
+
+.header-btn {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* .membership {
+    background-image: url('./images/ico.png');
+    background-repeat: no-repeat;
+    background-image: url(./images/ico.png);
+    background-repeat: no-repeat;
+    background-position: -103px -7px;
+    background-size: 493px;
+    width: 12px;
+    height: 12px;
+} */

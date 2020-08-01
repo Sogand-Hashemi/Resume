@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7E93FE;
+    background-image: url(http://static.simpledesktops.com/uploads/desktops/2010/07/29/lua.png);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clock {
+    width: 250px;
+    height: 250px;
+    border: px solid #000;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin: 175px auto;
+    position: relative;
+    filter: drop-shadow(0 0 10px black);
+    background-image: linear-gradient(120deg, rgb(255, 255, 131), rgb(255, 158, 239), #8cdeff, #8bffa8, rgb(255, 255, 161));
+    -webkit-filter: drop-shadow(0 0 10px black);
+}
+
+.hand {
+    width: 115px;
+    height: 1px;
+    border: 1px solid rgb(0, 90, 126);
+    border-radius: 100%;
+    background-color: rgb(0, 90, 126);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    -webkit-transition: all 0.05s;
+    -moz-transition: all 0.05s;
+    -ms-transition: all 0.05s;
+    -o-transition: all 0.05s;
+/*     display: none; */
+}
+
+.second-hand {
+  left:10px;
+    background-color: #d10000 !important;
+    border: 1px solid #d10000 !important;
+}
+
+.minute-hand {
+    background-color: rgb(0, 90, 126) !important;
+    border: 2px solid rgb(0, 90, 126) !important;
+    width: 110px;
+    left: 15px;
+}
+
+.hour-hand {
+    width: 90px;
+    left: 35px;
+    background-color: #0e0e0e !important;
+    border: 2px solid #0e0e0e !important;
+}
+
+.c12 {
+    color: darkred;
+    font-size: 46px;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    left: 108px;
+}
+
+.c12:after {
+    content: '';
+    background-color: darkred;
+    font-size: 46px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    left: 35%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.c3 {
+    color: darkred;
+    font-size: 46px;
+    position: absolute;
+    font-family: 'Crete Round', serif;
+    top: 89px;
+    right: 10px;
+}
+
+.c3:after {
+    content: '';
+    background-color: darkred;
+    font-size: 46px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    right: -10px;
+    top: 58%;
+    bottom: 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.c6 {
+    color: darkred;
+    font-size: 46px;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    left: 112px;
+    bottom: 0;
+}
+
+.c6:after {
+    content: '';
+    background-color: darkred;
+    font-size: 46px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    left: 36%;
+    bottom: 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.c9 {
+    color: darkred;
+    font-size: 46px;
+    position: absolute;
+    font-family: 'Crete Round', serif;
+    top: 87px;
+    left: 10px;
+}
+
+.c9:after {
+    content: '';
+    background-color: darkred;
+    font-size: 46px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    left: -10px;
+    top: 58%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.center {
+    background-color: darkred;
+    font-size: 46px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    font-family: 'Crete Round', serif;
+    position: absolute;
+    left: 117px;
+    top: 120px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}

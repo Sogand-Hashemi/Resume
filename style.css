@@ -33,6 +33,7 @@ a:hover {
     filter: drop-shadow(2px 2px 2px rgb(102, 102, 102));
     -webkit-filter: drop-shadow(2px 2px 2px rgb(59, 59, 59));
     cursor: pointer;
+    z-index: 5;
 }
 
 .go-to-top:hover {
@@ -585,18 +586,19 @@ a:hover {
 
 .part-1 {
     background: #eee url('./images/colorful-bg.png') repeat;
-    height: 670px;
+    height: 685px;
     width: 100%;
     padding: 15px 10%;
     z-index: -2;
-    box-shadow: inset 1px -1px 10px 2px black;
+    box-shadow: inset 1px -1px 10px 2px rgb(98, 98, 98);
+    overflow: hidden;
 }
 
 .about-me,
 .education {
     background-color: white;
-    width: 75%;
-    height: 455px;
+    width: 76%;
+    height: 475px;
     border-top: 8px solid #F7434C;
     box-shadow: 0 2px 8px 2px gray;
     margin-top: 92px;
@@ -605,7 +607,7 @@ a:hover {
 
 .title-education,
 .title-about-me {
-    margin: 50px 50px;
+    margin: 40px 50px 30px;
     padding: 10px 25px;
     height: 85px;
     border-left: 3px solid #37CACD;
@@ -625,7 +627,6 @@ a:hover {
     text-align: justify;
     margin: 15px 40px;
     font-size: 15px;
-    /* justify-content: justify; */
 }
 
 .certificate {
@@ -683,12 +684,6 @@ a:hover {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
 }
-
-
-/* http://static.simpledesktops.com/uploads/desktops/2015/07/11/Yosemite-Color-Block.png */
-
-
-/* http://static.simpledesktops.com/uploads/desktops/2014/08/06/w_v_s.png */
 
 .my-skills-title {
     text-align: center;
@@ -789,8 +784,114 @@ a:hover {
 /* -----------------------------------<part-3>---------------------------------------------- */
 
 .part-3 {
-    height: 890px;
+    height: 900px;
     background-color: #eee;
+    padding: 40px 18%;
+}
+
+.part-3>div>h1 {
+    margin-bottom: 80px;
+}
+
+.projects {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.projects-child {
+    cursor: pointer;
+    width: 362px;
+    margin: 0 auto;
+}
+
+.part-3>div>h1 {
+    color: #191919;
+}
+
+.projects>a>div>p {
+    color: #6e6e6e!important;
+}
+
+.projects>a {
+    color: black;
+}
+
+.projects>a:hover {
+    color: #F7434C;
+    transition: ease-in-out .5s;
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+    -ms-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+}
+
+.project-pic {
+    width: 360px;
+    height: 240px;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+    -webkit-filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+    position: relative;
+}
+
+.project-pic:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    top: 0;
+    left: 0;
+    background: rgba(211, 211, 211, 0.479);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.project-pic:hover:after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.samtik {
+    background-image: url('./images/plane1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elsta {
+    background-image: url('./images/elsta.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weather {
+    background-image: url('./images/oops.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkinpark {
+    background-image: url('./images/Liquid-45.625x385_q100.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hobby {
+    background-image: url('./images/flowers.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.js-30 {
+    background-image: url('./images/js30.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -904,6 +1005,53 @@ a:hover {
     .hire-me-btn {
         top: 600px;
         left: 280px;
+    }
+    .about-me,
+    .education {
+        background-color: white;
+        width: 90%;
+        height: 485px;
+        border-top: 8px solid #F7434C;
+        box-shadow: 0 2px 8px 2px gray;
+        margin-top: 92px;
+        z-index: 1;
+    }
+    .part-3 {
+        height: 910px;
+        background-color: #eee;
+        padding: 50px 10%;
+    }
+    .part-3>div>h1 {
+        margin-bottom: 80px;
+    }
+    .projects {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .projects-child {
+        cursor: pointer;
+        width: 290px;
+        margin: 0 auto;
+    }
+    .project-pic {
+        width: 289px;
+        height: 240px;
+        margin: 0 auto;
+        filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        -webkit-filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        position: relative;
+    }
+    .project-pic:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        top: 0;
+        left: 0;
+        background: rgba(211, 211, 211, 0.479);
+        opacity: 0;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
     }
 }
 
@@ -1030,7 +1178,7 @@ a:hover {
     .education {
         background-color: white;
         width: 100%;
-        height: 450px;
+        height: 465px;
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 92px;
@@ -1055,13 +1203,67 @@ a:hover {
         font-size: 22px;
         font-weight: 600;
     }
+    .part-3 {
+        height: 800px;
+        padding: 50px 5%;
+    }
+    .part-3>div>h1 {
+        margin-bottom: 50px;
+    }
+    .projects {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .projects-child {
+        cursor: pointer;
+        width: 288px;
+        margin: 0 auto;
+    }
+    .part-3>div>h1 {
+        color: #191919;
+    }
+    .project-pic {
+        width: 265px;
+        height: 190px;
+        filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        -webkit-filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        position: relative;
+    }
+    .project-pic:after {
+        height: 190px;
+    }
+}
+
+@media (max-width: 991px) {
+    .part-1 {
+        padding: 15px;
+    }
+    .about-me,
+    .education {
+        background-color: white;
+        width: 100%;
+        height: 485px;
+        border-top: 8px solid #F7434C;
+        box-shadow: 0 2px 8px 2px gray;
+        margin-top: 65px;
+    }
+    .part-3 {
+        height: 990px;
+        padding: 50px 5%;
+    }
+    .project-pic {
+        height: 170px;
+    }
+    .project-pic:after {
+        height: 170px;
+    }
 }
 
 .btn-menus-responsive {
     display: none;
 }
 
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 767px) {
     .btn-menus-responsive a:not(:first-child) {
         display: none;
     }
@@ -1095,7 +1297,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 767px) {
     .btn-menus-responsive.responsive {
         position: relative;
     }
@@ -1115,11 +1317,11 @@ a:hover {
     display: none;
 }
 
-@media(max-width:741px) {
+@media(max-width:767px) {
     #particles-js {
-        background-position: 100% bottom;
+        background-position: center bottom;
         background-size: 250px 400px;
-        height: 920px;
+        height: 830px;
     }
     .parent-of-btn-menus {
         display: none;
@@ -1330,13 +1532,14 @@ a:hover {
     .education {
         background-color: white;
         width: 100%;
-        height: 455px;
+        height: 465px;
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 25px;
     }
     .part-1 {
-        height: 1020px;
+        height: 1040px;
+        padding: 15px 40px;
     }
     .go-to-top {
         right: 10px;
@@ -1386,6 +1589,38 @@ a:hover {
         width: 30px;
         height: 30px;
         margin-top: 10px;
+    }
+    .part-3 {
+        height: 800px;
+        padding: 50px 5%;
+    }
+    .part-3>div>h1 {
+        margin-bottom: 50px;
+    }
+    .projects {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .projects-child {
+        cursor: pointer;
+        width: 358px;
+        margin: 0 auto;
+    }
+    .part-3>div>h1 {
+        color: #191919;
+    }
+    .project-pic {
+        width: 355px;
+        height: 160px;
+        filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        -webkit-filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        position: relative;
+    }
+    .project-pic:after {
+        height: 160px;
+    }
+    .part-3 {
+        height: 1650px;
     }
 }
 
@@ -1454,13 +1689,20 @@ a:hover {
     .education {
         background-color: white;
         width: 100%;
-        height: 450px;
+        height: 465px;
         border-top: 8px solid #F7434C;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 30px;
     }
     .part-1 {
         height: 1015px;
+        padding: 15px;
+    }
+    .info-education,
+    .info-about-me {
+        text-align: justify;
+        margin: 10px 30px;
+        font-size: 14px;
     }
     .title-education,
     .title-about-me {
@@ -1471,6 +1713,13 @@ a:hover {
         font-weight: 500 !important;
         font-size: 18px;
         font-family: 'Source Sans Pro', sans-serif;
+    }
+    .about-me,
+    .education {
+        height: 445px;
+    }
+    .customize-li>h4 {
+        font-size: 16px!important;
     }
     .fa-graduation-cap,
     .fa-id-badge {
@@ -1531,5 +1780,35 @@ a:hover {
         width: 20px;
         height: 20px;
         margin-top: 10px;
+    }
+    .part-3 {
+        height: 1080px;
+        padding: 25px 5%;
+    }
+    .part-3>div>h1 {
+        margin-bottom: 50px;
+    }
+    .projects {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .projects-child {
+        cursor: pointer;
+        width: 168px;
+        margin: 0 auto;
+    }
+    .part-3>div>h1 {
+        color: #191919;
+        font-size: 25px;
+    }
+    .project-pic {
+        width: 165px;
+        height: 70px;
+        filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        -webkit-filter: drop-shadow(0 2px 2px rgb(151, 151, 151));
+        position: relative;
+    }
+    .project-pic:after {
+        height: 70px;
     }
 }

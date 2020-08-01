@@ -1,0 +1,12 @@
+body{
+    background-color: #000;
+}
+.comingsoon{
+    width: 200px;
+    height: 200px;
+    margin: 150px auto;
+    background-image: url(./image/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
