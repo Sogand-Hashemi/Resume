@@ -72,7 +72,7 @@ a:hover {
 #particles-js {
     width: 100%;
     height: 960px;
-    background-color: #37CBCE;
+    background-color: #71d1d3;
     background-image: url('./images/sogandcv003.png');
     background-position: 88% 100%;
     background-repeat: no-repeat;
@@ -123,12 +123,12 @@ a:hover {
 }
 
 .btn-menus:hover {
-    color: #F7434C;
+    color: #f7686f;
     background-color: rgba(255, 255, 255, 0.459);
 }
 
 .btn-1 {
-    color: #F7434C;
+    color: #f7686f;
 }
 
 .btn-menus-except-home:hover .btn-1 {
@@ -402,11 +402,11 @@ a:hover {
 }
 
 #thirdText {
-    color: #F7434C;
+    color: #f7686f;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 50px;
     font-weight: 800;
-    text-shadow: 0 6px 5px #218282ec;
+    text-shadow: 0 6px 5px #45bebeec;
     top: 430px;
     left: 17%;
     position: absolute;
@@ -518,7 +518,7 @@ a:hover {
 }
 
 .download-btn:hover {
-    background-color: #F7434C;
+    background-color: #f7686f;
     color: #fff;
 }
 
@@ -543,7 +543,7 @@ a:hover {
     -o-border-radius: 25px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.664);
     font-size: 19px;
-    background-color: #F7434C;
+    background-color: #f7686f;
     color: white;
     transition: all .5s !important;
     -webkit-transition: all .5s !important;
@@ -599,7 +599,7 @@ a:hover {
     background-color: white;
     width: 76%;
     height: 475px;
-    border-top: 8px solid #F7434C;
+    border-top: 8px solid #f7686f;
     box-shadow: 0 2px 8px 2px gray;
     margin-top: 92px;
     z-index: 1;
@@ -610,7 +610,7 @@ a:hover {
     margin: 40px 50px 30px;
     padding: 10px 25px;
     height: 85px;
-    border-left: 3px solid #37CACD;
+    border-left: 3px solid #57c7c8;
     font-weight: 500 !important;
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -619,7 +619,7 @@ a:hover {
 .fa-graduation-cap,
 .fa-id-badge {
     font-size: 30px;
-    color: #F7434C;
+    color: #f7686f;
 }
 
 .info-education,
@@ -643,7 +643,7 @@ a:hover {
 }
 
 .click-here {
-    color: #F7434C;
+    color: #f7686f;
     animation: blink .8s;
     -webkit-animation: blink .8s;
     animation-iteration-count: infinite !important;
@@ -665,7 +665,7 @@ a:hover {
 
 .customize-li {
     list-style: none;
-    color: #F7434C;
+    color: #f7686f;
 }
 
 
@@ -754,14 +754,14 @@ a:hover {
 .sass-svg,
 .reactjs-svg,
 .bootstrap-svg {
-    fill: #F7434C;
+    fill: #f7686f;
     width: 50px;
     height: 45px;
     margin-top: 10px;
 }
 
 .git-svg {
-    fill: #F7434C;
+    fill: #f7686f;
     width: 55px;
     height: 55px;
     margin-top: 5px;
@@ -771,7 +771,7 @@ a:hover {
 .js-svg,
 .jquery-svg,
 .responsive-svg {
-    fill: #F7434C;
+    fill: #f7686f;
     width: 40px;
     height: 40px;
     margin-top: 15px;
@@ -817,7 +817,7 @@ a:hover {
 }
 
 .projects>a:hover {
-    color: #F7434C;
+    color: #f7686f;
     transition: ease-in-out .5s;
     -webkit-transition: ease-in-out .5s;
     -moz-transition: ease-in-out .5s;
@@ -958,7 +958,7 @@ a:hover {
 
 label {
     font-weight: 400 !important;
-    /* color: #F7434C; */
+    /* color: #f7686f; */
     font-size: 20px;
     margin: 10px 0;
 }
@@ -1153,7 +1153,7 @@ label {
         background-color: white;
         width: 90%;
         height: 485px;
-        border-top: 8px solid #F7434C;
+        border-top: 8px solid #f7686f;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 92px;
         z-index: 1;
@@ -1320,7 +1320,7 @@ label {
         background-color: white;
         width: 100%;
         height: 465px;
-        border-top: 8px solid #F7434C;
+        border-top: 8px solid #f7686f;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 92px;
     }
@@ -1329,7 +1329,7 @@ label {
         margin: 30px 30px;
         padding: 10px 0 0 25px;
         height: 75px;
-        border-left: 3px solid #37CACD;
+        border-left: 3px solid #57c7c8;
         font-weight: 500 !important;
         font-size: 20px;
         font-family: 'Source Sans Pro', sans-serif;
@@ -1337,7 +1337,7 @@ label {
     .fa-graduation-cap,
     .fa-id-badge {
         font-size: 25px;
-        color: #F7434C;
+        color: #f7686f;
     }
     .my-skills {
         text-align: center;
@@ -1404,7 +1404,7 @@ label {
         background-color: white;
         width: 100%;
         height: 485px;
-        border-top: 8px solid #F7434C;
+        border-top: 8px solid #f7686f;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 65px;
     }
@@ -1697,7 +1697,7 @@ label {
         background-color: white;
         width: 100%;
         height: 465px;
-        border-top: 8px solid #F7434C;
+        border-top: 8px solid #f7686f;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 25px;
     }
@@ -1929,7 +1929,7 @@ label {
         background-color: white;
         width: 100%;
         height: 465px;
-        border-top: 8px solid #F7434C;
+        border-top: 8px solid #f7686f;
         box-shadow: 0 2px 8px 2px gray;
         margin-top: 30px;
     }
@@ -1948,7 +1948,7 @@ label {
         margin: 30px 30px;
         padding: 10px 0 0 25px;
         height: 65px;
-        border-left: 3px solid #37CACD;
+        border-left: 3px solid #57c7c8;
         font-weight: 500 !important;
         font-size: 18px;
         font-family: 'Source Sans Pro', sans-serif;
@@ -1963,7 +1963,7 @@ label {
     .fa-graduation-cap,
     .fa-id-badge {
         font-size: 22px;
-        color: #F7434C;
+        color: #f7686f;
     }
     .go-to-top {
         width: 25px;

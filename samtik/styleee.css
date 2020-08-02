@@ -119,7 +119,7 @@ header {
     background-attachment: fixed;
     background-position: top -70px;
     background-size: cover;
-    height: 750px;
+    min-height: 750px;
 }
 
 .smtik-logo-top {
