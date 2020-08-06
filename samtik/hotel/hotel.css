@@ -1982,42 +1982,42 @@ input[type='radio']:checked:after {
 }
 
 .carousel-cell-1 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/137.jpg');
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/92.jpg');
     background-size: cover;
 }
 
 .carousel-cell-2 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/169.jpg');
-    background-size: cover;
-}
-
-.carousel-cell-3 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/266.jpg');
-    background-size: cover;
-}
-
-.carousel-cell-4 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/335.jpg');
-    background-size: cover;
-}
-
-.carousel-cell-5 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/434.jpg');
-    background-size: cover;
-}
-
-.carousel-cell-6 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/456.jpg');
-    background-size: cover;
-}
-
-.carousel-cell-7 {
     background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/465.jpg');
     background-size: cover;
 }
 
+.carousel-cell-3 {
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/92.jpg');
+    background-size: cover;
+}
+
+.carousel-cell-4 {
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/465.jpg');
+    background-size: cover;
+}
+
+.carousel-cell-5 {
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/92.jpg');
+    background-size: cover;
+}
+
+.carousel-cell-6 {
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/465.jpg');
+    background-size: cover;
+}
+
+.carousel-cell-7 {
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/92.jpg');
+    background-size: cover;
+}
+
 .carousel-cell-8 {
-    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/52.jpg');
+    background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.808)), url('../images/hotel/465.jpg');
     background-size: cover;
 }
 
